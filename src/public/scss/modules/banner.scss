@@ -1,0 +1,32 @@
+@import './../_variables.scss';
+
+.i_container {
+    position: relative;
+    #canvas {
+        background: -webkit-linear-gradient(top, rgb(22, 24, 35) 0%, rgb(19, 45, 175) 50%, rgb(22, 24, 35) 100%);
+        background: -moz-linear-gradient(top, rgb(22, 24, 35) 0%, rgb(19, 45, 175) 50%, rgb(22, 24, 35) 100%);
+        background: -o-linear-gradient(top, rgb(22, 24, 35) 0%, rgb(19, 45, 175) 50%, rgb(22, 24, 35) 100%);
+        background: -ms-linear-gradient(top, rgb(22, 24, 35) 0%, rgb(19, 45, 175) 50%, rgb(22, 24, 35) 100%);
+        background: linear-gradient(top, rgb(22, 24, 35) 0%, rgb(19, 45, 175) 50%, rgb(22, 24, 35) 100%);
+    }
+    .b_con {
+       position: absolute;
+       left: 100px;
+       color: $white;
+       opacity: 0;
+       animation: oA 1.5s ease 8s forwards;
+       .title {
+           font-weight: bolder;
+           font-size: 60px;
+       } 
+       .desc {
+           font-size: 50px;
+       }
+    }
+    @keyframes oA {
+        to {
+            left: 200px;
+            opacity: 1;
+        }
+    }
+}

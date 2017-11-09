@@ -1,0 +1,13 @@
+@import './../_variables.scss';
+
+.i_container {
+    .swiper-pagination {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        width: 10px;
+    }
+    .s_footer {
+        position: relative;
+    }
+}
