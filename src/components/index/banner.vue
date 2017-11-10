@@ -19,8 +19,8 @@
         name: 'BannerWrap',
         data() {
             return {
-                title: '这是标题',
-                desc: '这是内容这是内容内容内容'
+                title: '云沃盾',
+                desc: '运营商骨干级网络DDoS安全防护服务'
             }
         },
         created() {

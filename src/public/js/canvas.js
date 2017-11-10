@@ -3,7 +3,7 @@ function animate() {
         init: () => {
             S.Drawing.init('.canvas')
             document.body.classList.add('body--ready')
-            S.UI.simulate('中讯哈哈|网络|安全产品||')
+            S.UI.simulate('云沃盾牌|网络|安全产品||')
             S.Drawing.loop(() => {
                 S.Shape.render()
             })

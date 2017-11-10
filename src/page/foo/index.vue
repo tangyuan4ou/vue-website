@@ -11,6 +11,12 @@
         swiper(:options="swiperOption" ref="mySwiper")
             swiper-slide 
                 BannerWrap
+            swiper-slide 
+                Liuliang
+            swiper-slide 
+                Character
+            swiper-slide 
+                Industry
             swiper-slide.s_footer 
                 VueFooter
         div.swiper-pagination(solt="pagination")
@@ -23,6 +29,9 @@
 
     import VueNav from '~/components/nav'
     import BannerWrap from '~/components/index/banner'
+    import Liuliang from '~/components/index/liuliang'
+    import Character from '~/components/index/character'
+    import Industry from '~/components/index/industry'
     import VueFooter from '~/components/footer'
     
     export default{
@@ -55,6 +64,9 @@
             swiperSlide,
             VueNav,
             BannerWrap,
+            Liuliang,
+            Character,
+            Industry,
             VueFooter
         }
     }

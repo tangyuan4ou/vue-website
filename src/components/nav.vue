@@ -33,7 +33,6 @@
             const link = this.$refs.link
             for (const i in link) {
                 link[0].$el.classList.add('active')
-                console.log(link[i].$el)
             }
         },
         methods: {

@@ -1,0 +1,25 @@
+@import './../_variables.scss'; 
+
+.in_container {
+    h1 {
+        text-align: center;
+    }
+    background: $black;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    .in_wrap {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .industry {
+        display: inline-block;
+        padding: 60px 0;
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        .in_desc {
+            margin: 15px 0;
+        }
+    }
+}
