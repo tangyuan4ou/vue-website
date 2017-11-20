@@ -10,8 +10,8 @@
     div.in_container
         h1 行业解决方案
         ul.in_wrap
-            li.industry(v-for="indu in indus")
-                img.in_img(src="./../../public/imgs/user.png")
+            li.industry( v-for="indu in indus" )
+                img.in_img( :src="indu.url" )
                 h2.in_desc {{indu.desc}}
 </template>
 <script>
@@ -22,6 +22,7 @@
             return {
                 indus: [
                     {
+                        url: '../static/imgs/logo.png',
                         desc: '政府'
                     },
                     {

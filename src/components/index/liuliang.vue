@@ -22,12 +22,10 @@
             }
         },
         mounted() {
-            console.log()
         },
         methods: {
         },
         watch: {
-
         },
         components: {
 

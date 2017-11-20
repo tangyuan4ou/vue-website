@@ -16,35 +16,47 @@
             right: 350px;
             opacity: 0;
             transform: translateX(50px);
-            animation: a1 1s ease 1s forwards;
         }
-        @keyframes a1 {
-            to {
-                opacity: 1;
-                transform: translateX(0px); 
-            }
-        }
+        
         .an2 {
             position: absolute;
             top: 50%;
             left: 350px;
             opacity: 0; 
             transform: translateX(-50px) translateY(-50%);
-            animation: a2 1s ease 2s forwards;
         }
-        @keyframes a2 {
-            to {
-                opacity: 1;
-                transform: translateX(0px) translateY(-50%); 
-            }
-        }
+        
         .an3 {
             position: absolute;
             top: 350px;
             right: 350px;
             opacity: 0;
             transform: translateX(50px); 
-            animation: a1 1s ease 3s forwards;
         }
     }
+}
+//轮播图滚动至当前滑块显示动画
+.liuliangAn {
+  .an1,
+   {
+    animation: a1 1s ease 1s forwards;
+  }
+  .an2 {
+    animation: a2 1s ease 2s forwards;
+  }
+  .an3 {
+    animation: a1 1s ease 3s forwards;
+  }
+  @keyframes a1 {
+    to {
+        opacity: 1;
+          transform: translateX(0px); 
+    }
+  }
+  @keyframes a2 {
+    to {
+        opacity: 1;
+        transform: translateX(0px) translateY(-50%); 
+    }
+  }
 }

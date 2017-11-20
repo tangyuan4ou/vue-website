@@ -12,7 +12,7 @@
             swiper-slide 
                 BannerWrap
             swiper-slide 
-                Liuliang
+                Liuliang(ref='liuliang')
             swiper-slide 
                 Character
             swiper-slide 
@@ -45,7 +45,15 @@
                     height: window.innerHeight - 80,
                     mousewheelControl: true,
                     pagination: '.swiper-pagination',
-                    paginationClickable: true
+                    paginationClickable: true,
+                    onSlideChangeStart: swiper => {
+                        const activeIndex = swiper.activeIndex
+                        if (activeIndex === 1) {
+                            this.$refs.liuliang.$el.classList.add('liuliangAn')
+                        } else {
+                            this.$refs.liuliang.$el.classList.remove('liuliangAn')
+                        }
+                    }
                 }
             }
         },
