@@ -1,17 +1,17 @@
 <!--
     @ character
     @ author: tangyuan
-    @ desc: 流量描述部分，文案待定
+    @ desc: DDoS产品功能介绍部分
     @ date: 07-11-09 pm
-    @ last-update: 07-11-09 pm
+    @ last-update: 07-11-21 pm
 -->
 
 <template lang="jade">
     div.liu_container
         div.liu_wrap
-            h1.an1 流量封锁
-            h1.an2 流量监控
-            h1.an3 流量清洗
+            h1.an1 攻击检测服务
+            h1.an2 流量封堵服务
+            h1.an3 流量清洗服务
 </template>
 <script>
     import Vue from 'vue'

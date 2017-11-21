@@ -1,34 +1,93 @@
-@import './../_variables.scss'; 
-
+@import './../_variables.scss';
 .c_container {
-    h1 {
-        text-align: center;
-    }
-    background: $black;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  background: $black;
+  width: 100%;
+  height: 100%;
+  .c_title {
+    padding-top: 40px;
+    text-align: center;
     color: $white;
-    .c_wrap {
-        width: 1000px;
-        margin: 0 auto;
+  }
+  .c_wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 1000px;
+    height: 300px;
+    .client_side {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      width: 107px;
+      height: 107px;
     }
-    .char {
+    .c_w_desc {
+      width: 800px;
+      height: 100%;
+      margin: 0 auto;
+      .f_wrap {
         display: inline-block;
-        padding: 60px 0;
-        width: 333px;
-        height: 200px;
+        position: relative;
+        width: 266.6px;
+        height: 100%;
+        color: $white;
         text-align: center;
-        .c_desc {
-            margin: 15px 0;
-            opacity: 0;
-            transform: translateY(-30px);
-            transition: all 1s ease;
-        }
+        cursor: pointer;
         &:hover {
-            .c_desc {
-                opacity: 1;
-                transform: translateY(0px);
-            }
+          .wall {
+            transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(0deg);
+          }
+          .w_desc {
+            opacity: 1;
+          }
         }
+      }
+      .wall {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 140px;
+        border-radius: 6px;
+        background-image: url('./../../public/imgs/wall.png');
+        background-size: cover;
+        transform: translateX(-50%) translateY(-50%) rotateX(20deg) rotateY(-55deg);
+        transition: .8s all ease;
+      }
+      .w_desc {
+        opacity: 0;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(204, 204, 204, 0.2);
+        transition: 1s all ease;
+      }
+      .w_d_arrow {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        border-top: 5px solid rgba(204, 204, 204, 0);
+        border-left: 5px solid rgba(204, 204, 204, 0);
+        border-right: 5px solid rgba(204, 204, 204, 0);
+        border-bottom: 5px solid rgba(204, 204, 204, 0.2);
+      }
     }
+    .virus {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      width: 88px;
+      height: 144px;
+    }
+  }
 }

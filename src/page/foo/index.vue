@@ -11,10 +11,10 @@
         swiper(:options="swiperOption" ref="mySwiper")
             swiper-slide 
                 BannerWrap
+            swiper-slide
+                Character 
             swiper-slide 
                 Liuliang(ref='liuliang')
-            swiper-slide 
-                Character
             swiper-slide 
                 Industry
             swiper-slide.s_footer 
@@ -42,13 +42,37 @@
                 swiperOption: {
                     direction: 'vertical',
                     speed: 500,
+                    scrollbarHide: true,
                     height: window.innerHeight - 80,
                     mousewheelControl: true,
                     pagination: '.swiper-pagination',
                     paginationClickable: true,
+                    paginationBulletRender: (swiper, index, className) => {
+                        let pDesc = ''
+                        switch (index) {
+                        case 0:
+                            pDesc = 'banner'
+                            break
+                        case 1:
+                            pDesc = '产品功能'
+                            break
+                        case 2:
+                            pDesc = '产品优势'
+                            break
+                        case 3:
+                            pDesc = '行业解决方案'
+                            break
+                        case 4:
+                            pDesc = '空白'
+                            break
+                        default:
+                            break
+                        }
+                        return '<span class="' + className + '"><span class="pDesc">' + pDesc + '</span></span>'
+                    },
                     onSlideChangeStart: swiper => {
                         const activeIndex = swiper.activeIndex
-                        if (activeIndex === 1) {
+                        if (activeIndex === 2) {
                             this.$refs.liuliang.$el.classList.add('liuliangAn')
                         } else {
                             this.$refs.liuliang.$el.classList.remove('liuliangAn')
@@ -58,6 +82,7 @@
             }
         },
         created() {
+            document.documentElement.style.overflowY = 'hidden'
         },
         mounted() {
         },
@@ -79,6 +104,6 @@
         }
     }
 </script>
-<style lang="sass" scoped>
+<style lang="sass">
 	@import "./../../public/scss/modules/index";
 </style>

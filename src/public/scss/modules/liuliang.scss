@@ -39,13 +39,13 @@
 .liuliangAn {
   .an1,
    {
-    animation: a1 1s ease 1s forwards;
+    animation: a1 1s ease .5s forwards;
   }
   .an2 {
-    animation: a2 1s ease 2s forwards;
+    animation: a2 1s ease 1.5s forwards;
   }
   .an3 {
-    animation: a1 1s ease 3s forwards;
+    animation: a1 1s ease 2.5s forwards;
   }
   @keyframes a1 {
     to {

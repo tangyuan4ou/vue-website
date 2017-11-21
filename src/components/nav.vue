@@ -10,7 +10,7 @@
   header.h_con 
     router-link.l_link(to="#")
       img.logo(src="./../public/imgs/logo.png")
-    div.wrap
+    nav.wrap
       div.l_con(v-for="link in links")
         router-link.i_link(to="#" ref="link") {{link.text}}
 </template>

@@ -7,6 +7,28 @@
         right: 20px;
         width: 10px;
     }
+    .swiper-pagination-bullet {
+      display: block;
+      position: relative;
+      margin: 13px 0;
+      color: $white;
+      background: $gray;
+      &:hover {
+        .pDesc {
+          opacity: 1;
+        }
+      }
+    }
+    .pDesc {
+      display: block;
+      position: absolute;
+      top: -7px;
+      right: 10px;
+      width: 90px;
+      text-align: right;
+      opacity: 0;
+      transition: .5s all ease-in;
+    }
     .s_footer {
         position: relative;
     }
