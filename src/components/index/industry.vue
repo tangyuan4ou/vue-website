@@ -1,5 +1,5 @@
 <!--
-    @ character
+    @ industry
     @ author: tangyuan
     @ desc: 行业描述部分，文案待定
     @ date: 07-11-09 pm

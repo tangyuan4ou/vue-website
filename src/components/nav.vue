@@ -7,7 +7,7 @@
 -->
 
 <template lang="jade">
-  header.h_con 
+  header.h_con(:style="{background: navStyle}")
     router-link.l_link(to="#")
       img.logo(src="./../public/imgs/logo.png")
     nav.wrap
@@ -18,6 +18,7 @@
     import Vue from 'vue'
     export default{
         name: 'header',
+        props: ['navStyle'],
         data() {
             return {
                 links: [
@@ -28,7 +29,6 @@
                 ]
             }
         },
-        props: ['navStyle'],
         mounted() {
             const link = this.$refs.link
             for (const i in link) {
