@@ -9,9 +9,10 @@
 <template lang="jade">
     div.liu_container
         div.liu_wrap
-            h1.an1 攻击检测服务
+            h1.an1(v-html="isHtml")
             h1.an2 流量封堵服务
             h1.an3 流量清洗服务
+            div(@click.once="touch") touchMe
 </template>
 <script>
     import Vue from 'vue'
@@ -19,11 +20,15 @@
         name: 'liuliang',
         data() {
             return {
+                isHtml: '<p style="color: red">ppppp</p>'
             }
         },
         mounted() {
         },
         methods: {
+            touch: () => {
+                alert('aaaa')
+            }
         },
         watch: {
         },

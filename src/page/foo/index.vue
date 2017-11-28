@@ -9,10 +9,10 @@
     div.i_container
         VueNav(:navStyle="navStyle")
         swiper(:options="swiperOption")
+            swiper-slide
+                Character(class="c_con_an")
             swiper-slide 
                 BannerWrap
-            swiper-slide
-                Character(:class="character")
             swiper-slide 
                 Liuliang(:class="liuliang")
             swiper-slide 

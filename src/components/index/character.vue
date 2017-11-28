@@ -22,12 +22,12 @@
       div.client_side  客户端
         img(src="./../../public/imgs/豌豆.gif")
       div.c_w_desc
-        div.f_wrap
-          div.wall
-            h3 流量清洗服务
+        div.f_wrap1
+          Wall
           div.w_desc
             div.w_d_arrow
-            p 近源清洗与近目的清洗结合，原路径回注，客户无感知
+            h3 流量封堵服务
+            p 攻击流量近源封堵，封堵范围（全网、国际、网间、区域）按需组合
         div.f_wrap
           div.wall
             h3 流量封堵服务
@@ -45,21 +45,47 @@
 </template>
 <script>
     import Vue from 'vue'
+    import Wall from './wall'
+
     export default{
         name: 'charecter',
         data() {
             return {
+                text: 'aaa',
+                youyou: 'tangyuan'
             }
         },
         mounted() {
+            const sref = this
+            setTimeout(() => {
+                sref.text = 'bbb'
+                console.log('gogogo')
+            }, 2000)
+        },
+        watch: {
+            text(val, oldVal) {
+                console.log('newValue: ' + val)
+                console.log('oldValue: ' + oldVal)
+            },
+            youyou(val, oldVal) {
+                console.log('newValue: ' + val)
+                console.log('oldValue: ' + oldVal)
+            }
+        },
+        computed: {
+            updateYouyou: {
+                get() {
+                    return this.youyou = 'ccc'
+                },
+                set() {
+                    this.youyou = 'ccc'
+                }
+            }
         },
         methods: {
         },
-        watch: {
-
-        },
         components: {
-
+            Wall
         }
     }
 </script>
