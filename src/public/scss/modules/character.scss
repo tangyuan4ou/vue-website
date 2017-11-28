@@ -60,10 +60,6 @@
             width: 0px;
             height: 5px;
             border-radius: 5px;
-            background: -webkit-linear-gradient(left, rgba(124, 122, 122, 1) 20%, rgba(124, 122, 122, 0) 100%);
-            background: -moz-linear-gradient(left, rgba(124, 122, 122, 1) 20%, rgba(124, 122, 122, 0) 100%);
-            background: -o-linear-gradient(left, rgba(124, 122, 122, 1) 20%, rgba(124, 122, 122, 0) 100%);
-            background: -ms-linear-gradient(left, rgba(124, 122, 122, 1) 20%, rgba(124, 122, 122, 0) 100%);
             background: linear-gradient(left, rgba(124, 122, 122, 1) 20%, rgba(124, 122, 122, 0) 100%);
         }
         .c_a_desc {
@@ -74,11 +70,8 @@
             font-size: 22px;
             text-align: center;
         }
-        .fence {
-            width: 900px;
-            opacity: 0;
-        }
         .attack {
+            margin-left: 900px;
             width: 100px;
             opacity: 0; //transition: 1s all ease 2s;
         }
@@ -111,72 +104,15 @@
             transform: translateY(30px);
             transition: 1s all ease 5s;
         }
-        .f_wrap1 {
-            display: inline-block;
-            position: relative;
-            width: 266.6px;
-            height: 100%;
-            color: $white;
-            text-align: center;
-            cursor: pointer;
-            &:hover {
-                .w_desc {
-                    bottom: -30px;
-                    opacity: 1;
-                } 
-            }
-        }
         .f_wrap {
-            display: inline-block;
-            position: relative;
-            width: 266.6px;
-            height: 100%;
             color: $white;
             text-align: center;
             cursor: pointer;
             &:hover {
-                .wall {
+                .wall_wrap {
                     transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(0deg);
                 }
-                .w_desc {
-                    opacity: 1;
-                }
             }
-        }
-        .wall {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 200px;
-            height: 140px;
-            border-radius: 6px;
-            background-image: url('./../../public/imgs/wall.png');
-            background-size: cover;
-            transform: translateX(-50%) translateY(-50%) rotateX(20deg) rotateY(-55deg);
-            transition: .8s all ease;
-        }
-        .w_desc {
-            opacity: 0;
-            position: absolute;
-            bottom: 0px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 150px;
-            padding: 10px;
-            border-radius: 10px;
-            background: rgba(204, 204, 204, 0.4);
-            transition: 1s all ease;
-        }
-        .w_d_arrow {
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            border-top: 5px solid rgba(204, 204, 204, 0);
-            border-left: 5px solid rgba(204, 204, 204, 0);
-            border-right: 5px solid rgba(204, 204, 204, 0);
-            border-bottom: 5px solid rgba(204, 204, 204, 0.4);
         }
         .virus {
             position: absolute;
@@ -196,36 +132,19 @@
 
 .c_con_an {
     .c_a_container {
-        .fence {
-            animation: fenceAn 2s ease 4s forwards;
-        }
-        @keyframes fenceAn {
-            0% {
-                opacity: 0;
-                transform: translateX(20px);
-            }
-            60% {
-                opacity: 1;
-                transform: translateX(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateX(50px);
-            }
-        }
         .c_arrow_w {
-            opacity: 1;
             animation: arrowHeaderAn 5s ease 3s forwards;
         }
         @keyframes arrowHeaderAn {
             0% {
+                opacity: 1;
                 left: 80%;
             }
             40% {
-                left: 50%;
+                left: 60%;
             }
             60% {
-                left: 50%;
+                left: 60%;
             }
             99% {
                 opacity: 1;
@@ -243,10 +162,10 @@
                 width: 0;
             }
             40% {
-                width: 350px;
+                width: 250px;
             }
             60% {
-                width: 350px;
+                width: 250px;
             }
             100% {
                 width: 0;

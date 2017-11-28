@@ -3,10 +3,6 @@
 .i_container {
     position: relative;
     #canvas {
-        background: -webkit-linear-gradient(top, rgb(22, 24, 35) 0%, rgb(19, 45, 175) 50%, rgb(22, 24, 35) 100%);
-        background: -moz-linear-gradient(top, rgb(22, 24, 35) 0%, rgb(19, 45, 175) 50%, rgb(22, 24, 35) 100%);
-        background: -o-linear-gradient(top, rgb(22, 24, 35) 0%, rgb(19, 45, 175) 50%, rgb(22, 24, 35) 100%);
-        background: -ms-linear-gradient(top, rgb(22, 24, 35) 0%, rgb(19, 45, 175) 50%, rgb(22, 24, 35) 100%);
         background: linear-gradient(top, rgb(22, 24, 35) 0%, rgb(19, 45, 175) 50%, rgb(22, 24, 35) 100%);
     }
     .b_con {

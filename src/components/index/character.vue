@@ -11,7 +11,6 @@
     div.c_bg
     h1.c_title DDoS产品功能介绍
     div.c_a_container
-      p.c_a_desc.fence 三重防护
       div.c_arrow_w
         div.c_a_h
           div.a_h.a_h_left
@@ -22,24 +21,8 @@
       div.client_side  客户端
         img(src="./../../public/imgs/豌豆.gif")
       div.c_w_desc
-        div.f_wrap1
+        div.f_wrap
           Wall
-          div.w_desc
-            div.w_d_arrow
-            h3 流量封堵服务
-            p 攻击流量近源封堵，封堵范围（全网、国际、网间、区域）按需组合
-        div.f_wrap
-          div.wall
-            h3 流量封堵服务
-          div.w_desc
-            div.w_d_arrow
-            p 攻击流量近源封堵，封堵范围（全网、国际、网间、区域）按需组合
-        div.f_wrap
-          div.wall
-            h3 攻击检测服务
-          div.w_desc
-            div.w_d_arrow
-            p 攻击事件秒级发现，告警实时通知，定期提供流量与攻击报告
       div.virus 病毒
         img(src="./../../public/imgs/僵尸.gif")
 </template>
