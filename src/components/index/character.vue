@@ -19,12 +19,12 @@
       p.c_a_desc.attack 进攻
     article.c_wrap
       div.client_side  客户端
-        img(src="./../../public/imgs/豌豆.gif")
+        img.c_img(src="./../../public/imgs/side.png")
       div.c_w_desc
         div.f_wrap
           Wall
-      div.virus 病毒
-        img(src="./../../public/imgs/僵尸.gif")
+      div.virus 黑客
+        img.c_img(src="./../../public/imgs/virus.png")
 </template>
 <script>
     import Vue from 'vue'
@@ -34,36 +34,9 @@
         name: 'charecter',
         data() {
             return {
-                text: 'aaa',
-                youyou: 'tangyuan'
             }
         },
         mounted() {
-            const sref = this
-            setTimeout(() => {
-                sref.text = 'bbb'
-                console.log('gogogo')
-            }, 2000)
-        },
-        watch: {
-            text(val, oldVal) {
-                console.log('newValue: ' + val)
-                console.log('oldValue: ' + oldVal)
-            },
-            youyou(val, oldVal) {
-                console.log('newValue: ' + val)
-                console.log('oldValue: ' + oldVal)
-            }
-        },
-        computed: {
-            updateYouyou: {
-                get() {
-                    return this.youyou = 'ccc'
-                },
-                set() {
-                    this.youyou = 'ccc'
-                }
-            }
         },
         methods: {
         },

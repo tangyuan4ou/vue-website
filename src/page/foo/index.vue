@@ -14,9 +14,9 @@
             swiper-slide
                 Character(:class="character")
             swiper-slide 
-                Liuliang(:class="liuliang")
+                ProTrait
             swiper-slide 
-                Industry
+                Liuliang(:class="liuliang")
             swiper-slide.s_footer 
                 VueFooter
         div.swiper-pagination(solt="pagination")
@@ -31,7 +31,7 @@
     import BannerWrap from '~/components/index/banner'
     import Liuliang from '~/components/index/liuliang'
     import Character from '~/components/index/character'
-    import Industry from '~/components/index/industry'
+    import ProTrait from '~/components/index/proTrait'
     import VueFooter from '~/components/footer'
     
     export default{
@@ -87,7 +87,7 @@
                     this.character = 'c_con_an'
                     break
                 case 2:
-                    this.navStyle = '#161823'
+                    this.navStyle = '#000825'
                     this.liuliang = 'liuliangAn'
                     break
                 default:
@@ -109,7 +109,7 @@
             BannerWrap,
             Liuliang,
             Character,
-            Industry,
+            ProTrait,
             VueFooter
         }
     }
