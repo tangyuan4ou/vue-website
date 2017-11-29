@@ -1,9 +1,9 @@
 <!--
-    @ industry
+    @ proTrait
     @ author: tangyuan
-    @ desc: 行业描述部分，文案待定
+    @ desc: 产品优势部分
     @ date: 07-11-09 pm
-    @ last-update: 07-11-09 pm
+    @ last-update: 07-11-29 pm
 -->
 
 <template lang="jade">

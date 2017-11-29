@@ -14,9 +14,9 @@
             swiper-slide
                 Character(:class="character")
             swiper-slide 
-                ProTrait
+                ProTrait(:class="trait")
             swiper-slide 
-                Liuliang(:class="liuliang")
+                Liuliang(class="liuliang")
             swiper-slide.s_footer 
                 VueFooter
         div.swiper-pagination(solt="pagination")
@@ -88,7 +88,7 @@
                     break
                 case 2:
                     this.navStyle = '#000825'
-                    this.liuliang = 'liuliangAn'
+                    this.trait = 'tr_con_an'
                     break
                 default:
                     this.navStyle = '#161823'
