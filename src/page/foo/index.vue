@@ -16,7 +16,7 @@
             swiper-slide 
                 ProTrait(:class="trait")
             swiper-slide 
-                Liuliang(class="liuliang")
+                Construction(:class="constreuce")
             swiper-slide.s_footer 
                 VueFooter
         div.swiper-pagination(solt="pagination")
@@ -29,7 +29,7 @@
 
     import VueNav from '~/components/nav'
     import BannerWrap from '~/components/index/banner'
-    import Liuliang from '~/components/index/liuliang'
+    import Construction from '~/components/index/construction'
     import Character from '~/components/index/character'
     import ProTrait from '~/components/index/proTrait'
     import VueFooter from '~/components/footer'
@@ -39,8 +39,9 @@
         data() {
             return {
                 navStyle: '#161823',
-                liuliang: '',
                 character: '',
+                trait: '',
+                constreuce: '',
                 swiperOption: {
                     direction: 'vertical',
                     speed: 500,
@@ -53,6 +54,7 @@
             }
         },
         created() {
+            document.documentElement.style.overflowY = 'hidden'
         },
         mounted() {
             this.swiperOption.paginationBulletRender = (swiper, index, className) => {
@@ -90,6 +92,10 @@
                     this.navStyle = '#000825'
                     this.trait = 'tr_con_an'
                     break
+                case 3:
+                    this.navStyle = '#000000'
+                    this.constreuce = 'con_con_an'
+                    break
                 default:
                     this.navStyle = '#161823'
                     break
@@ -107,7 +113,7 @@
             swiperSlide,
             VueNav,
             BannerWrap,
-            Liuliang,
+            Construction,
             Character,
             ProTrait,
             VueFooter

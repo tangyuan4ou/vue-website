@@ -121,6 +121,44 @@
             &:after {
                 opacity: 1;
             }
+            .t_d_i_bg {
+                animation: traitBgAn 2s ease 3s;
+            }
+            @keyframes traitBgAn {
+                0% {
+                    line-height: 150px;
+                    color: rgb(16, 53, 172);
+                    font-size: 100px;            
+                    background: rgb(220, 220, 224);
+                }
+                50% {
+                    background: rgba(220, 220, 224, 0);
+                    font-size: 70px;
+                    color: $white;
+                    line-height: 50px;
+                }
+                100% {
+                    line-height: 150px;
+                    color: rgb(16, 53, 172);
+                    font-size: 100px;            
+                    background: rgb(220, 220, 224);
+                }
+            }
+            .t_d_con {
+                animation: traitDescAn 2s ease 3s;
+            }
+            @keyframes traitDescAn {
+                0% {
+                    transform: translateY(0px);
+                }
+                50% {
+                    transform: translateY(-100px);
+                }
+                100% {
+                    transform: translateY(0px);
+                }
+            }
         }
+        
     }
 }
