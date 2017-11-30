@@ -70,7 +70,7 @@
                     pDesc = '产品优势'
                     break
                 case 3:
-                    pDesc = '行业解决方案'
+                    pDesc = '敬请期待'
                     break
                 case 4:
                     pDesc = '空白'

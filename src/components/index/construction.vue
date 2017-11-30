@@ -1,9 +1,9 @@
 <!--
-    @ character
+    @ construction
     @ author: tangyuan
     @ desc: DDoS产品功能介绍部分
     @ date: 07-11-09 pm
-    @ last-update: 07-11-21 pm
+    @ last-update: 07-11-30 pm
 -->
 
 <template lang="jade">
