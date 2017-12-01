@@ -5,7 +5,9 @@
     width: 100%;
     min-width: 1200px;
     height: 100%;
-    background-image: url('./../../public/imgs/3.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     .c_bg {
         position: absolute;
         top: 0;

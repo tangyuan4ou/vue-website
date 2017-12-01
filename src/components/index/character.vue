@@ -7,7 +7,7 @@
 -->
 
 <template lang="jade">
-  section.c_container
+  section.c_container(:style="bgImg")
     div.c_bg
     h1.c_title DDoS产品功能介绍
     div.c_a_container
@@ -34,6 +34,9 @@
         name: 'charecter',
         data() {
             return {
+                bgImg: {
+                    backgroundImage: 'url(' + require('../../public/imgs/3.png') + ')'
+                }
             }
         },
         mounted() {

@@ -5,7 +5,9 @@
     width: 100%;
     min-width: 1200px;
     height: 100%;
-    background: url(./../../public/imgs/timg.jpeg) no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     .c_con_bg {
         position: absolute;
         top: 0; left: 0;

@@ -7,7 +7,7 @@
 -->
 
 <template lang="jade">
-  section.tr_container
+  section.tr_container(:style="bgImg")
     h1.tr_title 产品优势
     div.t_b_wrap
     article.tr_desc_con
@@ -43,6 +43,9 @@
         name: 'proTrait',
         data() {
             return {
+                bgImg: {
+                    backgroundImage: 'url(' + require('./../../public/imgs/tBg.png') + ')'
+                }
             }
         },
         mounted() {

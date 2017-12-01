@@ -7,7 +7,7 @@
 -->
 
 <template lang="jade">
-  section.con_container
+  section.con_container(:style="bgImg")
     div.c_con_bg
     article.con_wrap 
       img.con_img(src="./../../public/imgs/working.png")
@@ -25,6 +25,9 @@
         name: 'construction',
         data() {
             return {
+                bgImg: {
+                    backgroundImage: 'url(' + require('./../../public/imgs/timg.png') + ')'
+                }
             }
         },
         mounted() {
