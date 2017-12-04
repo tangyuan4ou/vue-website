@@ -1,4 +1,5 @@
 @import './../_variables.scss';
+
 .c_container {
     position: relative;
     background: $black;
@@ -17,16 +18,18 @@
         background-color: rgba(0, 0, 0, 0.4);
     }
     .c_title {
-        padding-top: 40px;
+        padding-top: 50px;
         text-align: center;
         color: $white;
+        letter-spacing: 3px;
+        font-size: 30px;
     }
     .c_a_container {
         width: 1000px;
         margin: 0 auto;
         .c_arrow_w {
             position: absolute;
-            top: 118px;
+            top: 140px;
             left: 80%;
             opacity: 0;
             transition: 1s opacity ease 3s;
@@ -39,10 +42,6 @@
             width: 30px;
             height: 5px;
             border-radius: 10px;
-            background: -webkit-linear-gradient(left, rgba(124, 122, 122, 1) 50%, rgba(124, 122, 122, 0) 100%);
-            background: -moz-linear-gradient(left, rgba(124, 122, 122, 1) 50%, rgba(124, 122, 122, 0) 100%);
-            background: -o-linear-gradient(left, rgba(124, 122, 122, 1) 50%, rgba(124, 122, 122, 0) 100%);
-            background: -ms-linear-gradient(left, rgba(124, 122, 122, 1) 50%, rgba(124, 122, 122, 0) 100%);
             background: linear-gradient(left, rgba(124, 122, 122, 1) 50%, rgba(124, 122, 122, 0) 100%);
         }
         .a_h_left {

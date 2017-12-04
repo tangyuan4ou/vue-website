@@ -18,6 +18,7 @@
             swiper-slide 
                 Construction(:class="constreuce")
             swiper-slide.s_footer 
+                Partner
                 VueFooter
         div.swiper-pagination(solt="pagination")
 </template>
@@ -32,6 +33,7 @@
     import Construction from '~/components/index/construction'
     import Character from '~/components/index/character'
     import ProTrait from '~/components/index/proTrait'
+    import Partner from '~/components/index/partner'
     import VueFooter from '~/components/footer'
     
     export default{
@@ -96,6 +98,9 @@
                     this.navStyle = '#000000'
                     this.constreuce = 'con_con_an'
                     break
+                case 4:
+                    this.navStyle = '#172250'
+                    break
                 default:
                     this.navStyle = '#161823'
                     break
@@ -116,6 +121,7 @@
             Construction,
             Character,
             ProTrait,
+            Partner,
             VueFooter
         }
     }
