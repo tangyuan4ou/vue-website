@@ -1,5 +1,6 @@
 <template lang="jade">
     div.foo-container
+        VueNav
         h3 {{title}}
         div.foo-content
             p(v-text="'这是来自公用store的state（count）：' + count")
@@ -9,8 +10,9 @@
 <script>
     import Vue from 'vue'
     import { mapState, mapActions } from 'vuex'
+    import VueNav from '~/components/nav'
     export default{
-        name: 'fooDetail',
+        name: 'aboutUs',
         data() {
             return {
                 title: '亲情，属于你的心灵港湾'
@@ -38,7 +40,7 @@
             ])
         },
         components: {
-
+            VueNav
         }
     }
 </script>

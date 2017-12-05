@@ -1,18 +1,18 @@
 <!--
     @ nav
     @ author: tangyuan
-    @ desc: 顶导，文案待定，首页轮播样式变化待定
+    @ desc: 顶导
     @ date: 07-11-06 pm
-    @ last-update: 07-11-06 pm
+    @ last-update: 07-12-05 pm
 -->
 
 <template lang="jade">
   header.h_con(:style="{background: navStyle}")
-    router-link.l_link(to="#")
+    router-link.l_link(to="/")
       img.logo(src="./../public/imgs/logo.png")
     nav.wrap
       div.l_con(v-for="link in links")
-        router-link.i_link(to="#" ref="link") {{link.text}}
+        router-link.i_link(:to="link.href" ref="link") {{link.text}}
 </template>
 <script>
     import Vue from 'vue'
@@ -22,10 +22,22 @@
         data() {
             return {
                 links: [
-                    { text: '首页' },
-                    { text: '防护原理' },
-                    { text: '安全态势' },
-                    { text: '联系我们' }
+                    {
+                        href: '/',
+                        text: '首页'
+                    },
+                    {
+                        href: '#',
+                        text: '防护原理'
+                    },
+                    {
+                        href: '#',
+                        text: '安全态势'
+                    },
+                    {
+                        href: 'aboutUs',
+                        text: '关于我们'
+                    }
                 ]
             }
         },

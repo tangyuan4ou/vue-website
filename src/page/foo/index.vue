@@ -18,7 +18,7 @@
             swiper-slide 
                 Construction(:class="constreuce")
             swiper-slide.s_footer 
-                Partner
+                Partner(:class="partner")
                 VueFooter
         div.swiper-pagination(solt="pagination")
 </template>
@@ -44,6 +44,7 @@
                 character: '',
                 trait: '',
                 constreuce: '',
+                partner: '',
                 swiperOption: {
                     direction: 'vertical',
                     speed: 500,
@@ -100,6 +101,7 @@
                     break
                 case 4:
                     this.navStyle = '#172250'
+                    this.partner = 'p_con_an'
                     break
                 default:
                     this.navStyle = '#161823'

@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
+    text-align: center;
     .p_bg {
         width: 100%;
         height: 100%;
@@ -19,9 +20,10 @@
         top: 0; left: 0;
         width: 100%;
         padding-top: 50px;
-        text-align: center;
         letter-spacing: 3px;
         font-size: 30px;
+        opacity: 0;
+        transition: all 1s ease 1s;
     }
     .p_wrap {
         position: absolute;
@@ -29,7 +31,38 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 1000px;
-        height: 500px;
+        height: 400px;
+        opacity: 0;
+        transition: all 1s ease 2s;
+    }
+    .p_con {
+        &:nth-child(1) {
+            margin-top: 45px;
+        }
+    }
+    .con_m {
+        display: inline-block;
+        &:nth-child(2) {
+            margin-right: 60px;
+        }
+    }
+    .p_img {
+        display: inline-block;
+        width: 100px;
+        margin: 20px 10px;
+        border-radius: (0 6px 0 6px);
+        background: rgba(255, 255, 255, 0.3);
+        border: 0px solid $white;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    .img_m {
+        margin: 20px 5px;
+    }    
+}
+.p_con_an {
+    .p_title,
+    .p_wrap {
+        opacity: 1;
     }
 }
-
