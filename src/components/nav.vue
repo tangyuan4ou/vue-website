@@ -9,7 +9,7 @@
 <template lang="jade">
   header.h_con(:style="{background: navStyle}")
     router-link.l_link(to="/")
-      img.logo(src="./../public/imgs/logo.png")
+      img.logo(:src="'/static/imgs/'+ logoSrc +'.png'")
     nav.wrap
       div.l_con(v-for="link in links")
         router-link.i_link(:to="link.href" ref="link") {{link.text}}
@@ -18,7 +18,7 @@
     import Vue from 'vue'
     export default{
         name: 'header',
-        props: ['navStyle'],
+        props: ['navStyle', 'logoSrc'],
         data() {
             return {
                 links: [

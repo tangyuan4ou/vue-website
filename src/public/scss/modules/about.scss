@@ -1,0 +1,26 @@
+@import './../_variables.scss';
+
+.a_container {
+    width: 100%;
+    min-width: 1000px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: left;
+    .a_decs_wrap {
+        width: 1000px;
+        height: 500px;
+        margin: 0 auto;
+        color: $black;
+    }
+    .a_d_con {
+        width: 500px;
+        height: 200px;
+        padding: 130px 80px 0 520px;
+        p {
+            line-height: 25px;
+        }
+    }
+    .a_d_title {
+        padding: 20px
+    }
+}

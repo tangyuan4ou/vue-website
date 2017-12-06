@@ -7,7 +7,7 @@
 -->
 <template lang="jade">
     div.i_container
-        VueNav(:navStyle="navStyle")
+        VueNav(:navStyle="navStyle")(:logoSrc='logoSrc')
         swiper(:options="swiperOption")
             swiper-slide 
                 BannerWrap
@@ -40,6 +40,7 @@
         name: 'index',
         data() {
             return {
+                logoSrc: 'logo',
                 navStyle: '#161823',
                 character: '',
                 trait: '',

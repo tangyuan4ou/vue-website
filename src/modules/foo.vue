@@ -7,9 +7,8 @@
 -->
 
 <template lang="jade">
-    div.main
-        div.content
-            router-view
+  div.main
+    router-view
 </template>
 <script>
 import Vue from 'vue'
@@ -40,9 +39,5 @@ export default {
     width: 100%;
     min-width: 1200px;
     height: 100%;
-    .content{
-        height: auto;
-        width: 100%;
-    }
 }
 </style>

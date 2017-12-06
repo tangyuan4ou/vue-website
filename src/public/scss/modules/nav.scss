@@ -65,3 +65,19 @@
     }
   }
 }
+
+.w_link {
+    border-bottom: 1px solid #dedfe3;
+    .i_link {
+        color: $black;
+        &::after {
+          border-bottom: 2px solid $black;
+        }
+    }
+    .active {
+        color: #909fec;
+        &::after {
+            border-color: #909fec;
+          }
+    }
+}
