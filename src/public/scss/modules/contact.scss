@@ -1,0 +1,27 @@
+@import './../_variables.scss';
+
+.cot_container {
+    width: 100%;
+    min-width: 1200px;
+    margin-bottom: 60px;
+    color: $black;
+    .cot_con_wrap {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .cot_desc_con {
+        display: inline-block;
+        width: 500px;
+        height: 356px;
+        padding-top: 44px;
+        vertical-align: top;
+        h3 {
+            margin-top: 20px;
+            line-height: 35px;
+        }
+        p {
+            margin-left: 20px;
+            line-height: 25px;
+        }
+    }
+}

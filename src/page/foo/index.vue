@@ -7,7 +7,7 @@
 -->
 <template lang="jade">
     div.i_container
-        VueNav(:navStyle="navStyle")(:logoSrc='logoSrc')
+        VueNav(:navStyle="navStyle")(:imgUrl='imgUrl')
         swiper(:options="swiperOption")
             swiper-slide 
                 BannerWrap
@@ -40,8 +40,8 @@
         name: 'index',
         data() {
             return {
-                logoSrc: 'logo',
                 navStyle: '#161823',
+                imgUrl: '<img class="logo" src=' + require('./../../public/imgs/logo.png') + '></img>',
                 character: '',
                 trait: '',
                 constreuce: '',
@@ -58,7 +58,6 @@
             }
         },
         created() {
-            document.documentElement.style.overflowY = 'hidden'
         },
         mounted() {
             this.swiperOption.paginationBulletRender = (swiper, index, className) => {

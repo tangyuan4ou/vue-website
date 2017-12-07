@@ -63,7 +63,7 @@ module.exports = (options = {}) => {
         },
 
         externals: {
-
+            "BMap": "BMap"
         },
 
         module: {
