@@ -13,7 +13,6 @@
             p.desc {{desc}}
 </template>
 <script>
-    import Vue from 'vue'
     import { canvasLoad } from '~/public/js/canvas'
     export default{
         name: 'BannerWrap',
@@ -41,6 +40,6 @@
         }
     }
 </script>
-<style lang="sass" >
+<style lang="sass" scoped>
 @import './../../public/scss/modules/banner'
 </style>

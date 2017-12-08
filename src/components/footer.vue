@@ -10,7 +10,6 @@
 	div.f_con 备案号：1234354523423423 
 </template>
 <script>
-    import Vue from 'vue'
     export default {
         name: 'footer',
         data() {

@@ -14,7 +14,6 @@
         p &nbsp;&nbsp;&nbsp;&nbsp;中国联通网络安全业务运营中心成立于2017年，是中国联通在网络安全领域的专业化运营团队，专注于安全态势感知、DDoS防护、域名防护、网站安全防护等领域，秉承合作开放共赢的理念，与合作伙伴一起致力于网络空间安全的观测、保护、治理。
 </template>
 <script>
-    import Vue from 'vue'
     export default {
         name: 'about',
         data() {

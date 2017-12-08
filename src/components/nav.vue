@@ -14,7 +14,6 @@
         router-link.i_link(:to="link.href" ref="link") {{link.text}}
 </template>
 <script>
-    import Vue from 'vue'
     export default{
         name: 'header',
         props: ['navStyle', 'imgUrl'],

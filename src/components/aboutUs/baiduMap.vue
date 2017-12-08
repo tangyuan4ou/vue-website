@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    const BMap = require('BMap')
+    import BMap from 'BMap'
     export default {
         name: 'baiduMap',
         data() {

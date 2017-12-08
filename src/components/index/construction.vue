@@ -20,7 +20,6 @@
       h1.con_d_tittle 敬请期待！
 </template>
 <script>
-    import Vue from 'vue'
     export default{
         name: 'construction',
         data() {

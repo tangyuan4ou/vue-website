@@ -27,7 +27,6 @@
         img.c_img(src="./../../public/imgs/virus.png")
 </template>
 <script>
-    import Vue from 'vue'
     import Wall from './wall'
 
     export default{

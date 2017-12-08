@@ -21,7 +21,7 @@
 </template>
 
 <script>
-    import BaiduMap from './baiduMap.vue'
+    import BaiduMap from './baiduMap'
     export default {
         name: 'contact',
         data() {
