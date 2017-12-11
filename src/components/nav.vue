@@ -40,9 +40,14 @@
             }
         },
         mounted() {
-            const link = this.$refs.link
+            const link = this.$refs.link,
+                href = window.location.href
             for (const i in link) {
-                link[0].$el.classList.add('active')
+                if (href.indexOf('aboutUs') !== -1) {
+                    link[3].$el.classList.add('active')
+                } else {
+                    link[0].$el.classList.add('active')
+                }
             }
         },
         methods: {

@@ -76,7 +76,7 @@
                     pDesc = '敬请期待'
                     break
                 case 4:
-                    pDesc = '空白'
+                    pDesc = '合作伙伴'
                     break
                 default:
                     break
