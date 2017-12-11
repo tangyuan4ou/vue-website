@@ -36,12 +36,12 @@
     import Partner from '~/components/index/partner'
     import VueFooter from '~/components/footer'
     
-    export default{
+    export default {
         name: 'index',
         data() {
             return {
                 navStyle: '#161823',
-                imgUrl: '<img class="logo" src=' + require('./../../public/imgs/logo.png') + '></img>',
+                imgUrl: `<img class="logo" src=${require('./../../public/imgs/logo.png')} ></img>`,
                 character: '',
                 trait: '',
                 constreuce: '',
@@ -58,6 +58,8 @@
             }
         },
         created() {
+            document.body.classList.remove('bodyScroll')
+            document.body.classList.add('bodyHidden')
         },
         mounted() {
             this.swiperOption.paginationBulletRender = (swiper, index, className) => {
@@ -81,7 +83,7 @@
                 default:
                     break
                 }
-                return '<span class="' + className + '"><span class="pDesc">' + pDesc + '</span></span>'
+                return `<span class="${className}"><span class="pDesc">${pDesc}</span></span>`
             }
 
             this.swiperOption.onSlideChangeStart = swiper => {
@@ -130,4 +132,7 @@
 </script>
 <style lang="sass">
 	@import "./../../public/scss/modules/index";
+    .bodyHidden {
+        overflow-y: hidden;
+    }
 </style>

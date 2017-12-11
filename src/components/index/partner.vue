@@ -41,7 +41,7 @@
         name: 'partner',
         data() {
             return {
-                bg: { backgroundImage: 'url(' + require('./../../public/imgs/partnerBg.png') + ')' }
+                bg: { backgroundImage: `url( ${require('./../../public/imgs/partnerBg.png')} )` }
             }
         },
         created() {

@@ -15,11 +15,13 @@
         name: 'aboutUs',
         data() {
             return {
-                imgUrl: '<img class="logo" src=' + require('./../../public/imgs/bLogo.png') + '></img>',
+                imgUrl: `<img class="logo" src=${require('./../../public/imgs/bLogo.png')} ></img>`,
                 navStyle: '#f3f4f8'
             }
         },
         created() {
+            document.body.classList.remove('bodyHidden')
+            document.body.classList.add('bodyScroll')
         },
         mounted() {
         },
@@ -39,4 +41,7 @@
     }
 </script>
 <style lang="sass" scoped>
+    .bodyScroll {
+        overflow-y: auto;
+    }
 </style>

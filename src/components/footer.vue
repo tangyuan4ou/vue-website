@@ -14,20 +14,15 @@
         name: 'footer',
         data() {
             return {
-
             }
         },
         mounted() {
-
         },
         methods: {
-
         },
         watch: {
-
         },
         components: {
-
         }
     }
 </script>

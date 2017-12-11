@@ -20,12 +20,12 @@
       h1.con_d_tittle 敬请期待！
 </template>
 <script>
-    export default{
+    export default {
         name: 'construction',
         data() {
             return {
                 bgImg: {
-                    backgroundImage: 'url(' + require('./../../public/imgs/timg.png') + ')'
+                    backgroundImage: `url( ${require('./../../public/imgs/timg.png')} )`
                 }
             }
         },

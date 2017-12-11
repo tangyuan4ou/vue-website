@@ -42,9 +42,7 @@
         name: 'proTrait',
         data() {
             return {
-                bgImg: {
-                    backgroundImage: 'url(' + require('./../../public/imgs/tBg.png') + ')'
-                }
+                bgImg: { backgroundImage: `url( ${require('./../../public/imgs/tBg.png')} )` }
             }
         },
         mounted() {

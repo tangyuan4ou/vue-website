@@ -19,7 +19,7 @@
         data() {
             return {
                 bgImg: {
-                    backgroundImage: 'url(' + require('./../../public/imgs/abBg.jpg') + ')'
+                    backgroundImage: `url( ${require('./../../public/imgs/abBg.jpg')} )`
                 }
             }
         }

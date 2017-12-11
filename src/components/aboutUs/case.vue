@@ -27,15 +27,15 @@
             return {
                 descs: [
                     {
-                        bg: 'url(' + require('./../../public/imgs/1.jpg') + ')',
+                        bg: `url( ${require('./../../public/imgs/1.jpg')} )`,
                         test: '2017年某电商双十一安全保障'
                     },
                     {
-                        bg: 'url(' + require('./../../public/imgs/3.jpg') + ')',
+                        bg: `url( ${require('./../../public/imgs/3.jpg')} )`,
                         test: '2017年中共十九大安全保障'
                     },
                     {
-                        bg: 'url(' + require('./../../public/imgs/4.jpg') + ')',
+                        bg: `url( ${require('./../../public/imgs/4.jpg')} )`,
                         test: '2017年某公司国际方向攻击防护'
                     }
                 ]
