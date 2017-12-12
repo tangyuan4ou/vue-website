@@ -2,13 +2,13 @@
 
 .a_container {
     width: 100%;
-    min-width: 1000px;
+    min-width: $min-width;
     height: 500px;
     background-repeat: no-repeat;
     background-position: left;
-    background-color: rgb(243, 244, 248);
+    background-color: $main;
     .a_decs_wrap {
-        width: 1000px;
+        width: $container-width;
         height: 500px;
         margin: 0 auto;
         color: $black;

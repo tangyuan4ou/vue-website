@@ -11,6 +11,7 @@
 
 <script>
     import BMap from 'BMap'
+    
     export default {
         name: 'baiduMap',
         data() {

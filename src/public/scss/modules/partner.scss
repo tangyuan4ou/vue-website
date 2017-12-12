@@ -1,14 +1,13 @@
 @import './../_variables.scss';
+@import './../_mixins.scss';
 
 .p_container {
     position: relative;
     width: 100%;
-    min-width: 1200PX;
+    min-width: $min-width;
     height: 100%;
     min-height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    @include background(100% 100%);
     text-align: center;
     .p_bg {
         width: 100%;
@@ -22,17 +21,16 @@
         padding-top: 50px;
         letter-spacing: 3px;
         font-size: 30px;
-        opacity: 0;
+        @include opacity(0);
         transition: all 1s ease 1s;
     }
     .p_wrap {
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 50%; left: 50%;
         transform: translate(-50%, -50%);
-        width: 1000px;
+        width: $container-width;
         height: 400px;
-        opacity: 0;
+        @include opacity(0);
         transition: all 1s ease 2s;
     }
     .p_con {
@@ -63,6 +61,6 @@
 .p_con_an {
     .p_title,
     .p_wrap {
-        opacity: 1;
+        @include opacity(100);
     }
 }

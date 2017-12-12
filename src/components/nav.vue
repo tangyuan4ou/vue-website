@@ -14,7 +14,7 @@
         router-link.i_link(:to="link.href" ref="link") {{link.text}}
 </template>
 <script>
-    export default{
+    export default {
         name: 'header',
         props: ['navStyle', 'imgUrl'],
         data() {

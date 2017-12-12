@@ -111,10 +111,6 @@
                 }
             }
         },
-        computed: {
-        },
-        filters: {
-        },
         methods: {
         },
         components: {

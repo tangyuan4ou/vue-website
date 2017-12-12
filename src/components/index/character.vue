@@ -29,18 +29,10 @@
 <script>
     import Wall from './wall'
 
-    export default{
+    export default {
         name: 'charecter',
         data() {
-            return {
-                bgImg: {
-                    backgroundImage: `url( ${require('../../public/imgs/3.png')} )`
-                }
-            }
-        },
-        mounted() {
-        },
-        methods: {
+            return { bgImg: { backgroundImage: `url( ${require('../../public/imgs/3.png')} )` } }
         },
         components: {
             Wall

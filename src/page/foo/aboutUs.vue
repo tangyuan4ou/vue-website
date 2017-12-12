@@ -6,12 +6,12 @@
         Contact
 </template>
 <script>
-    import Vue from 'vue'
     import VueNav from '~/components/nav'
     import About from '~/components/aboutUs/about'
     import Case from '~/components/aboutUs/case'
     import Contact from '~/components/aboutUs/contact'
-    export default{
+
+    export default {
         name: 'aboutUs',
         data() {
             return {
@@ -22,15 +22,6 @@
         created() {
             document.body.classList.remove('bodyHidden')
             document.body.classList.add('bodyScroll')
-        },
-        mounted() {
-        },
-        computed: {
-        },
-        filters: {
-
-        },
-        methods: {
         },
         components: {
             VueNav,

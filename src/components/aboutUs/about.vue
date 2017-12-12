@@ -18,9 +18,7 @@
         name: 'about',
         data() {
             return {
-                bgImg: {
-                    backgroundImage: `url( ${require('./../../public/imgs/abBg.jpg')} )`
-                }
+                bgImg: { backgroundImage: `url( ${require('./../../public/imgs/abBg.jpg')} )` }
             }
         }
     }

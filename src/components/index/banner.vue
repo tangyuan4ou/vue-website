@@ -14,6 +14,7 @@
 </template>
 <script>
     import { canvasLoad } from '~/public/js/canvas'
+    
     export default{
         name: 'BannerWrap',
         data() {
@@ -26,17 +27,13 @@
             canvasLoad()
         },
         mounted() {
-            const top = window.innerHeight / 2
-            this.$refs.bCon.style.top = `${top - 120}px`
+            this.conTop()
         },
         methods: {
-
-        },
-        watch: {
-
-        },
-        components: {
-
+            conTop() {
+                const top = window.innerHeight / 2
+                this.$refs.bCon.style.top = `${top - 120}px`
+            }
         }
     }
 </script>

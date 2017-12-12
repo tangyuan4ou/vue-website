@@ -1,65 +1,64 @@
 @import './../_variables.scss';
-
-.h_con{
-  position: relative;
-  width: 100%;
-  min-width: $container-width;
-  height: 80px;
-  background-color: rgb(22, 24, 35);
-  .l_link {
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    transform: translateY(-50%);
-    display: inline-block;
-    width: 200px;
-    height: 52px;
-  }
-  .logo {
-    width: 100%;
-  }
-  .wrap {
-    width: 800px;
-    height: 80px;
-    line-height: 80px;
-    margin: 0 auto;
-  }
-  .l_con {
-    display: inline-block;
-    margin: 0 80px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-  .i_link {
+.h_con {
     position: relative;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    color: $white;
-    font-size: $size-h3;
-    &::after {
-      position: absolute;
-      top: 55px;
-      display: block;
-      content: '';
-      width: 100%;
-      border-bottom: 2px solid $white;
-      transform: scaleX(0);
-      transition: transform .5s ease;
+    width: 100%;
+    min-width: $min-width;
+    height: 80px;
+    background-color: rgb(22, 24, 35);
+    .l_link {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 200px;
+        height: 52px;
     }
-    &:hover {
-      &::after {
-        transform: scaleX(1);
-      }
+    .logo {
+        width: 100%;
     }
-  }
-  .active {
-    color: #909fec;
-    &::after {
-      border-color: #909fec;
+    .wrap {
+        width: 800px;
+        height: 80px;
+        line-height: 80px;
+        margin: 0 auto;
     }
-  }
+    .l_con {
+        display: inline-block;
+        margin: 0 80px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .i_link {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: $white;
+        font-size: $size-h3;
+        &::after {
+            position: absolute;
+            top: 55px;
+            display: block;
+            content: '';
+            width: 100%;
+            border-bottom: 2px solid $white;
+            transform: scaleX(0);
+            transition: transform .5s ease;
+        }
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+    .active {
+        color: #909fec;
+        &::after {
+            border-color: #909fec;
+        }
+    }
 }
 
 .w_link {
@@ -67,13 +66,13 @@
     .i_link {
         color: $black;
         &::after {
-          border-bottom: 2px solid $black;
+            border-bottom: 2px solid $black;
         }
     }
     .active {
         color: #909fec;
         &::after {
             border-color: #909fec;
-          }
+        }
     }
 }

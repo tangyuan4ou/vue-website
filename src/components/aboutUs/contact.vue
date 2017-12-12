@@ -22,12 +22,9 @@
 
 <script>
     import BaiduMap from './baiduMap'
+    
     export default {
         name: 'contact',
-        data() {
-            return {
-            }
-        },
         components: {
             BaiduMap
         }

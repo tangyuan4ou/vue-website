@@ -1,4 +1,5 @@
 @import './../_variables.scss'; 
+@import './../_mixins.scss';
 
 @font-face {
     font-family: 'iconfont';
@@ -9,18 +10,16 @@
     url(./../../public/font/iconfont.svg#iconfont) format('svg');
 }
 .iconfont{
-    font-family:"iconfont";
-    font-style:normal;
+    font-family: "iconfont" !important;
+    font-style: normal;
   }
 
 .tr_container {
     position: relative;
     width: 100%;
-    min-width: 1200px;
+    min-width: $min-width;
     height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include background();
     .tr_title {
         position: absolute;
         top: 0; left: 0;
@@ -42,18 +41,17 @@
         position: absolute;
         top: 50%; left: 50%;
         transform: translate(-50%, -50%);
-        width: 1000px;
+        width: $container-width;
         height: 300px;
         color: $white;
         .t_d_wrap {
             position: relative;
-            display: inline-block;
             width: 250px;
             height: 100%;
-            vertical-align: top;
+            @include middle();
             overflow: hidden;
             transform: translateY(-10px);
-            opacity: 0;
+            @include opacity(0);
             transition: all 1s ease 1s;
             &:after {
                 content: '';
@@ -63,7 +61,7 @@
                 height: 100%;
                 border-right: 1px solid $white;
                 transform: scaleY(0.5);
-                opacity: 0;
+                @include opacity(0);
                 transition: all .8s ease 2s;
             }
             &:hover {
@@ -100,15 +98,15 @@
             transition: all .8s ease;
             .t_d_title {
                 height: 60px;
-                font-size: 24px;
+                font-size: $size-h2;
                 line-height: 60px;
                 text-align: center;
             }
             .t_d_des {
                 width: 160px;
                 margin: 20px auto;
-                font-size: 16px;
-                line-height: 20px;
+                font-size: $size-h3;
+                line-height: 24px;
                 text-align: center;
             }
         }
@@ -117,10 +115,10 @@
 .tr_con_an {
     .tr_desc_con {
         .t_d_wrap {
-            opacity: 1;
+            @include opacity(100);
             transform: translateY(0);
             &:after {
-                opacity: 1;
+                @include opacity(100);
             }
             .t_d_i_bg {
                 animation: traitBgAn 2s ease 3s;

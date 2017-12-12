@@ -1,21 +1,21 @@
 @import './../_variables.scss';
+@import './../_mixins.scss';
 
 .cot_container {
     width: 100%;
-    min-width: 1200px;
+    min-width: $min-width;
     margin-bottom: 60px;
     color: $black;
-    background-color: rgb(243, 244, 248);
+    background-color: $main;
     .cot_con_wrap {
-        width: 1000px;
+        width: $container-width;
         margin: 0 auto;
     }
     .cot_desc_con {
-        display: inline-block;
         width: 500px;
         height: 356px;
         padding-top: 44px;
-        vertical-align: top;
+        @include middle(top);
         h3 {
             margin-top: 20px;
             line-height: 35px;

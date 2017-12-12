@@ -23,20 +23,7 @@
     export default {
         name: 'construction',
         data() {
-            return {
-                bgImg: {
-                    backgroundImage: `url( ${require('./../../public/imgs/timg.png')} )`
-                }
-            }
-        },
-        mounted() {
-        },
-        methods: {
-        },
-        watch: {
-        },
-        components: {
-
+            return { bgImg: { backgroundImage: `url( ${require('./../../public/imgs/timg.png')} )` } }
         }
     }
 </script>
