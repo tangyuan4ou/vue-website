@@ -25,15 +25,6 @@
         },
         created() {
             canvasLoad()
-        },
-        mounted() {
-            this.conTop()
-        },
-        methods: {
-            conTop() {
-                const top = window.innerHeight / 2
-                this.$refs.bCon.style.top = `${top - 120}px`
-            }
         }
     }
 </script>

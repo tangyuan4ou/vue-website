@@ -38,7 +38,7 @@ export default {
 @import './../public/scss/style';
 .main{
     width: 100%;
-    min-width: 1200px;
+    min-width: $min-width;
     height: 100%;
 }
 </style>

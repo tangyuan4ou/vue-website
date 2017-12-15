@@ -42,8 +42,8 @@ function animate() {
             },
 
             adjustCanvas() {
-                canvas.width = window.innerWidth
-                canvas.height = window.innerHeight - 80
+                canvas.width = window.innerWidth > 1200 ? window.innerWidth : 1200
+                canvas.height = window.innerHeight > 550 ? window.innerHeight - 80 : 550
             },
 
             clearFrame() {

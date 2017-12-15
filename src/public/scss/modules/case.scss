@@ -64,6 +64,7 @@
         line-height: 50px;
         border: 1px solid $white;
         transition: all .5s ease;
+        cursor: pointer;
         &:hover {
             background: $white;
             color: rgb(102, 100, 100);

@@ -50,7 +50,8 @@
                     direction: 'vertical',
                     speed: 500,
                     scrollbarHide: true,
-                    height: window.innerHeight - 80,
+                    scrollbarDraggable: false,
+                    height: window.innerHeight > 550 ? window.innerHeight - 80 : 550,
                     mousewheelControl: true,
                     pagination: '.swiper-pagination',
                     paginationClickable: true

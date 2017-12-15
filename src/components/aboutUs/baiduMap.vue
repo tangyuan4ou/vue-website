@@ -28,14 +28,14 @@
                     height: 30,
                     title: '中讯邮电'
                 }
-                const map = new BMap.Map('allmap')
-                const point = new BMap.Point(116.331384, 39.939534)
+                const map = new BMap.Map('allmap'),
+                    point = new BMap.Point(116.331384, 39.939534),
+                    marker = new BMap.Marker(point),
+                    infoWindow = new BMap.InfoWindow('北京市海淀区主语国际三号楼', opts)
                 map.centerAndZoom(point, 14)
                 map.addControl(new BMap.NavigationControl())
                 map.addControl(new BMap.ScaleControl())
-                const marker = new BMap.Marker(point)
                 map.addOverlay(marker)
-                const infoWindow = new BMap.InfoWindow('北京市海淀区主语国际三号楼', opts)
                 map.openInfoWindow(infoWindow, map.getCenter())
             }
         }

@@ -11,19 +11,7 @@
 </template>
 <script>
     export default {
-        name: 'footer',
-        data() {
-            return {
-            }
-        },
-        mounted() {
-        },
-        methods: {
-        },
-        watch: {
-        },
-        components: {
-        }
+        name: 'footer'
     }
 </script>
 <style lang="sass">
