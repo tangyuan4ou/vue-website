@@ -31,8 +31,8 @@
         }
     }
 </script>
-<style lang="sass" scoped>
-    .bodyScroll {
-        overflow-y: auto;
-    }
+<style lang="sass">
+.bodyScroll {
+    overflow-y: auto;
+}
 </style>
