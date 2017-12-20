@@ -17,7 +17,7 @@
           p 攻击事件秒级发现，告警实时通知，定期提供流量与攻击报告
         div.c_des
           h5 告警方式：
-          p 网页告警、邮件通知、短信通知、自动语音拨打
+          p.n_indent 网页告警、邮件通知、短信通知、自动语音拨打
         div.c_des
           h5 攻击检测类型：
           p SYN Flood、ICMP Flood、UDP Flood、TCP fragmentation、Stream Flood、Land Attack等
@@ -33,10 +33,10 @@
           p 全网流量封堵业务，将所有通过联通网络去往用户的流量进行封堵。
         div.c_des
           h5 高级版：
-          p &nbsp;&nbsp;&nbsp;&nbsp;国际网间流量封堵
-          p &nbsp;&nbsp;&nbsp;&nbsp;国内网间流量封堵
-          p &nbsp;&nbsp;&nbsp;&nbsp;联通国内流量封堵
-          p &nbsp;&nbsp;&nbsp;&nbsp;指定区域流量封堵
+          p 国际网间流量封堵
+          p 国内网间流量封堵
+          p 联通国内流量封堵
+          p 指定区域流量封堵
       div.c_des_wrap
         div.c_des_title
           h3 流量清洗服务
@@ -46,20 +46,15 @@
           p 近源清洗与近目的清洗结合，原路径回注，客户无感知
         div.c_des
           h5 清洗方式：
-          p &nbsp;&nbsp;&nbsp;&nbsp;近源清洗：在骨干网靠近攻击源的一侧进行流量清洗，适合大流量攻击防护
-          p &nbsp;&nbsp;&nbsp;&nbsp;近目的清洗：在骨干网靠近被攻击的目标网络一侧进行流量清洗，适合普通流量攻击防护
-          p &nbsp;&nbsp;&nbsp;&nbsp;在实际任务执行中，两种清洗方式结合使用，以达到最佳防护效果
+          p 近源清洗：在骨干网靠近攻击源的一侧进行流量清洗，适合大流量攻击防护
+          p 近目的清洗：在骨干网靠近被攻击的目标网络一侧进行流量清洗，适合普通流量攻击防护
+          p 在实际任务执行中，两种清洗方式结合使用，以达到最佳防护效果
 </template>
 <script>
-    import Wall from './wall'
-
     export default {
         name: 'charecter',
         data() {
             return { bgImg: { backgroundImage: `url( ${require('../../public/imgs/3.png')} )` } }
-        },
-        components: {
-            Wall
         }
     }
 </script>

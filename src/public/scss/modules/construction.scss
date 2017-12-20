@@ -37,6 +37,7 @@
                 margin: 15px 0;
             }
             p {
+                text-indent: 25px;
                 margin: 10px 0;
             }
         }
@@ -46,11 +47,6 @@
             color: rgb(124, 178, 250);
             @include opacity(0);
             transform: translate(118px, -315px);
-        }
-        .c_blank {
-            display: inline-block;
-            width: 20px;
-            height: 15px;
         }
     }
 }

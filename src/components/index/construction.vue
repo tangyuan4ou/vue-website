@@ -13,9 +13,9 @@
       img.con_img(src="./../../public/imgs/working.png")
       div.con_desc_wrap
         h2 域名无忧：
-        p <span class="c_blank"></span>域名实时监控、域名秒级刷新
+        p 域名实时监控、域名秒级刷新
         h2 网站安全：
-        p <span class="c_blank"></span>WEB漏洞监测、网站挂马监测、网页篡改监测、网页敏感内容监测、网站可用性监测
+        p WEB漏洞监测、网站挂马监测、网页篡改监测、网页敏感内容监测、网站可用性监测
       h1.con_d_tittle 敬请期待！
 </template>
 <script>

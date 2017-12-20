@@ -83,9 +83,14 @@
             color: $white;
             font-size: 18px;
         }
+        .n_indent {
+            text-indent: 0px;
+        }
         p {
+            text-indent: 25px;
             margin-top: 13px;
         }
+        
     }
 }
 .c_con_an {

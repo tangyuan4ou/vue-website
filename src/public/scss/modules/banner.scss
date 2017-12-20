@@ -19,7 +19,7 @@
        min-width: $min-width;
        color: $white;
        @include opacity(0);
-       animation: oA 1.5s ease 8s forwards;
+       animation: oA 1.5s ease 3s forwards;
        .title {
            font-weight: bolder;
            font-size: 60px;

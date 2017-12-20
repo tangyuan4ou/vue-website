@@ -26,6 +26,7 @@
     import 'swiper/dist/css/swiper.css'
     import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
+    import Loading from '~/components/loading'
     import VueNav from '~/components/nav'
     import BannerWrap from '~/components/index/banner'
     import Character from '~/components/index/character'
@@ -38,6 +39,7 @@
         name: 'index',
         data() {
             return {
+                display: 'block',
                 navStyle: '#161823',
                 imgUrl: `<img class="logo" src=${require('./../../public/imgs/logo.png')} ></img>`,
                 character: '',
@@ -112,6 +114,7 @@
         components: {
             swiper,
             swiperSlide,
+            Loading,
             VueNav,
             BannerWrap,
             Character,

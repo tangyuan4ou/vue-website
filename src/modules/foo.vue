@@ -8,11 +8,13 @@
 
 <template lang="jade">
   div.main
+    Loading(:display="display")
     router-view
 </template>
 <script>
 
 import Vue from 'vue'
+import Loading from './../components/loading.vue'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 Vue.use(VueAwesomeSwiper)
@@ -21,9 +23,17 @@ export default {
     name: 'foo',
     data() {
         return {
+            display: 'block'
         }
     },
     components: {
+        Loading
+    },
+    created() {
+        const self = this
+        const time = setTimeout(() => {
+            self.display = 'none'
+        }, 3000)
     },
     methods: {
     },
