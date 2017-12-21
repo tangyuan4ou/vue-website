@@ -81,7 +81,7 @@ function animate() {
         canvas.width = window.innerWidth > 1200 ? window.innerWidth : 1200
         canvas.height = window.innerHeight > 550 ? window.innerHeight - 80 : 550
         con = canvas.getContext('2d')
-        for (let e = 0; e < 800; e++) {
+        for (let e = 0; e < 500; e++) {
             pxs[e] = new Circle()
             pxs[e].reset()
         }

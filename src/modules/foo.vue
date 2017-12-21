@@ -33,7 +33,7 @@ export default {
         const self = this
         const time = setTimeout(() => {
             self.display = 'none'
-        }, 3000)
+        }, 1500)
     },
     methods: {
     },

@@ -27,19 +27,25 @@
         transition: all 1s ease 1s;
     }
     .c_content {
-        position: absolute;
-        top: 80px; left: 50%;
-        transform: translateX(-50%);
-        width: $min-width;
-        height: 492px;
+        position: relative;
+        width: $container-width;
+        height: 100%;
+        margin: 0 auto;
         @include opacity(0);
+        transition: all 1s ease 2s;
+    }
+    .c_wrap {
+        position: absolute;
+        top: 45%; left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
         transition: all 1s ease 2s;
     }
     .c_des_wrap {
         @include middle();
-        width: 370px;
-        height: 490px;
-        margin-right: 35px;
+        width: 300px;
+        height: 380px;
+        margin-right: 40px;
         border: 1px solid rgb(161, 159, 159);
         background: rgba(225, 225, 225, 0.1);
         transition: all .5s ease;
@@ -51,13 +57,13 @@
             margin-right: 0;
         }
         &:hover {
-            transform: scale(1.06);
+            transform: scale(1.1);
         }
     }
     .c_des_title {
         width: 300px;
         height: 100px;
-        padding: 25px 35px 20px;
+        padding: 15px 0 10px;
         border-bottom: 1px solid rgb(161, 159, 159);
         text-align: center;
         color: $white;
@@ -75,8 +81,8 @@
         }
     }
     .c_des {
-        width: 300px;
-        padding: 0 35px;
+        width: 260px;
+        padding: 0 20px;
         margin-top: 25px;
         color: rgb(207, 206, 206);
         h5 {
@@ -88,9 +94,16 @@
         }
         p {
             text-indent: 25px;
+            line-height: 22px;
             margin-top: 13px;
         }
-        
+        span {
+            display: inline-block;
+            margin: 13px 24px 0 0;
+            &:nth-child(2n-1) {
+                margin-right: 0;
+            }
+        }
     }
 }
 .c_con_an {
@@ -98,7 +111,9 @@
         @include opacity(100);
     }
     .c_content {
-        top: 100px;
         @include opacity(100);
+    }
+    .c_wrap {
+        top: 50%;
     }
 } 

@@ -1,7 +1,7 @@
 <!--
     @ index
     @ author: tangyuan
-    @ desc: 首页轮播，目前完成顶导、banner。其他待定
+    @ desc: 首页轮播
     @ date: 07-11-06 am
     @ last-update: 07-11-22 am
 -->
@@ -53,7 +53,10 @@
                     scrollbarDraggable: false,
                     height: window.innerHeight > 550 ? window.innerHeight - 80 : 550,
                     mousewheelControl: true,
+                    mousewheelForceToAxis: true,
+                    mousewheelInvert: true,
                     pagination: '.swiper-pagination',
+                    keyboardControl: true,
                     paginationClickable: true
                 }
             }

@@ -27,7 +27,8 @@ module.exports = (options = {}) => {
             filename: 'modules/' + chunkName + '.html',
             chunks: ['manifest', 'vendor', chunkName],
             // 允许控制块在添加到页面之前的排序方式
-            chunksSortMode: 'dependency'
+            chunksSortMode: 'dependency',
+            favicon:'./src/public/imgs/favicon.ico'
         }))
     }
 

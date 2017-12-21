@@ -66,13 +66,14 @@
             }
             &:hover {
                 .t_d_i_bg {
+                    width: 70px; height: 70px;
                     background: rgba(220, 220, 224, 0);
                     font-size: 70px;
                     color: $white;
                     line-height: 50px;
                 }
                 .t_d_con {
-                    transform: translateY(-100px);
+                    transform: translateY(-20px);
                 }
             }
         }
@@ -125,18 +126,21 @@
             }
             @keyframes traitBgAn {
                 0% {
+                    width: 150px; height: 150px;
                     line-height: 150px;
                     color: rgb(16, 53, 172);
                     font-size: 100px;            
                     background: rgb(220, 220, 224);
                 }
                 50% {
+                    width: 70px; height: 70px;
                     background: rgba(220, 220, 224, 0);
                     font-size: 70px;
                     color: $white;
                     line-height: 50px;
                 }
                 100% {
+                    width: 150px; height: 150px;
                     line-height: 150px;
                     color: rgb(16, 53, 172);
                     font-size: 100px;            
@@ -151,7 +155,7 @@
                     transform: translateY(0px);
                 }
                 50% {
-                    transform: translateY(-100px);
+                    transform: translateY(-20px);
                 }
                 100% {
                     transform: translateY(0px);
