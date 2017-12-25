@@ -7,8 +7,8 @@
 -->
 <template lang="jade">
     div.i_container
-        VueNav(:navStyle="navStyle")(:imgUrl='imgUrl')
-        swiper(:options="swiperOption")
+        VueNav(:navStyle="navStyle")(:imgUrl='imgUrl')(:swiperFn="swiperFn")
+        swiper(:options="swiperOption" ref="mySwiper")
             swiper-slide 
                 BannerWrap
             swiper-slide
@@ -46,6 +46,7 @@
                 trait: '',
                 constreuce: '',
                 partner: '',
+                swiperFn: 'aas',
                 swiperOption: {
                     direction: 'vertical',
                     speed: 500,
@@ -65,8 +66,14 @@
             document.body.classList.remove('bodyScroll')
             document.body.classList.add('bodyHidden')
         },
+        computed: {
+            swiper() {
+                return this.$refs.mySwiper.swiper
+            }
+        },
         mounted() {
             this.init()
+            this.swiperFn = this.swiper
         },
         methods: {
             init() {
@@ -132,5 +139,8 @@
 	@import "./../../public/scss/modules/index";
     .bodyHidden {
         overflow-y: hidden;
+    }
+    .swiper-container {
+        overflow: hidden;
     }
 </style>
