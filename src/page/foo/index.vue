@@ -3,11 +3,10 @@
     @ author: tangyuan
     @ desc: 首页轮播
     @ date: 07-11-06 am
-    @ last-update: 07-11-22 am
 -->
 <template lang="jade">
     div.i_container
-        VueNav(:navStyle="navStyle")(:imgUrl='imgUrl')(:swiperFn="swiperFn")
+        VueNav(:navStyle="navStyle")(:imgUrl='imgUrl')(:swiperObj="swiperObj")
         swiper(:options="swiperOption" ref="mySwiper")
             swiper-slide 
                 BannerWrap
@@ -46,7 +45,7 @@
                 trait: '',
                 constreuce: '',
                 partner: '',
-                swiperFn: 'aas',
+                swiperObj: '',
                 swiperOption: {
                     direction: 'vertical',
                     speed: 500,
@@ -73,7 +72,7 @@
         },
         mounted() {
             this.init()
-            this.swiperFn = this.swiper
+            this.swiperObj = this.swiper
         },
         methods: {
             init() {

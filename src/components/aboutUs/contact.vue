@@ -3,7 +3,6 @@
     @ author: tangyuan
     @ desc: 联系我们
     @ date: 07-12-07 pm
-    @ last-update: 07-12-07 pm
 -->
 <template lang="jade">
   section.cot_container

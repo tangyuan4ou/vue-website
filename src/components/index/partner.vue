@@ -3,7 +3,6 @@
     @ author: tangyuan
     @ desc: 合作伙伴
     @ date: 07-12-04 am
-    @ last-update: 07-12-04 pm
 -->
 
 <template lang="jade">

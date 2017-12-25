@@ -3,7 +3,6 @@
     @ author: tangyuan
     @ desc: loading
     @ date: 07-11-20 am
-    @ lase-update: 07-12-20 am
 -->
 <template lang="jade">
   div.load_container(:style="{display: display}")

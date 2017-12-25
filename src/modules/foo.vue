@@ -3,7 +3,6 @@
     @ author: tangyuan
     @ desc: 网站入口
     @ date: 07-11-06 am
-    @ last-update: 07-11-08 pm
 -->
 
 <template lang="jade">

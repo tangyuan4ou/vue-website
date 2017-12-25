@@ -3,7 +3,6 @@
     @ author: tangyuan
     @ desc: 顶导
     @ date: 07-11-06 pm
-    @ last-update: 07-12-05 pm
 -->
 
 <template lang="jade">
@@ -18,7 +17,7 @@
 <script>
     export default {
         name: 'header',
-        props: ['navStyle', 'imgUrl', 'swiperFn'],
+        props: ['navStyle', 'imgUrl', 'swiperObj'],
         data() {
             return {
                 links: [
@@ -51,8 +50,8 @@
             },
             toTop() {
                 const self = this
-                if (self.swiperFn === undefined) return
-                self.swiperFn.slideTo(0, 1000, () => {
+                if (self.swiperObj === undefined) return
+                self.swiperObj.slideTo(0, 1000, () => {
                     self.navStyle = '161823'
                 })
             }

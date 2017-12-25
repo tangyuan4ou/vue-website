@@ -3,7 +3,6 @@
     @ author: tangyuan
     @ desc: 百度地图
     @ date: 07-12-07 pm
-    @ last-update: 07-12-07 pm
 -->
 <template lang="jade">
   div#allmap.allmap

@@ -3,7 +3,6 @@
     @ author: tangyuan
     @ desc: 404页面
     @ date: 07-12-21 am
-    @ last-update: 07-12-21 am
 -->
 <template lang="jade">
   section.fzf_container
@@ -20,30 +19,30 @@
     }
 </script>
 <style lang="sass" scoped>
-  @import './../../public/scss/_variables.scss';
+    @import './../../public/scss/_variables.scss';
 
-.fzf_container {
-    width: 100%;
-    min-width: $min-width;
-    color: #8c8c8c;
-    text-align: center;
-    .f_img_wrap {
-        width: 500px;
-        margin: 100px auto 0;
-        img {
-            width: 100%;
-        }
-        h2 {
-            font-size: 30px;
-            margin: 15px 0;
-        }
-        a {
-            text-decoration: underline;
-            color: #8c8c8c;
-            &:hover {
-                color: $gray;
+    .fzf_container {
+        width: 100%;
+        min-width: $min-width;
+        color: #8c8c8c;
+        text-align: center;
+        .f_img_wrap {
+            width: 500px;
+            margin: 100px auto 0;
+            img {
+                width: 100%;
+            }
+            h2 {
+                font-size: 30px;
+                margin: 15px 0;
+            }
+            a {
+                text-decoration: underline;
+                color: #8c8c8c;
+                &:hover {
+                    color: $gray;
+                }
             }
         }
     }
-}
 </style>

@@ -1,3 +1,9 @@
+<!--
+    @ aboutUs
+    @ author: tangyuan
+    @ desc: 关于我们页面
+    @ date: 07-12-21 am
+-->
 <template lang="jade">
     div.ab_container
         VueNav(class="w_link")(:navStyle="navStyle")(:imgUrl='imgUrl')

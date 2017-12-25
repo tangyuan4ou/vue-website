@@ -3,7 +3,6 @@
     @ author: tangyuan
     @ desc: 关于我
     @ date: 07-12-07 am
-    @ last-update: 07-12-07 pm
 -->
 
 <template lang="jade">

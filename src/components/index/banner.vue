@@ -3,7 +3,6 @@
     @ author: tangyuan
     @ desc: index banner, canvas, 文案待定
     @ date: 07-11-08 am
-    @ lase-update: 07-11-08 am
 -->
 <template lang="jade">
     div.b_wrap

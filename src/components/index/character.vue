@@ -3,7 +3,6 @@
     @ author: tangyuan
     @ desc: 产品功能介绍部分
     @ date: 07-11-09 pm
-    @ last-update: 07-11-22 am
 -->
 
 <template lang="jade">
