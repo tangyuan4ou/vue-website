@@ -6,7 +6,11 @@
 -->
 
 <template lang="jade">
+<<<<<<< HEAD
 	div.f_con 备案号：12346464563 
+=======
+	div.f_con 备案号：12343545234sdfsd 
+>>>>>>> f2c1587ab7d6eb69315939b8e20b86b35c9feaa0
 </template>
 <script>
     export default {
