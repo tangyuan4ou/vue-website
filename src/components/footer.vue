@@ -6,7 +6,7 @@
 -->
 
 <template lang="jade">
-	div.f_con 备案号：12346464563
+	div.f_con 备案号：1234646dgerg4563
 </template>
 <script>
     export default {
