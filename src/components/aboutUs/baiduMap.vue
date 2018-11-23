@@ -41,7 +41,7 @@
     }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
     .allmap {
         display: inline-block;
         width: 500px;
