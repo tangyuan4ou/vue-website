@@ -44,7 +44,7 @@
 <style lang="scss" scoped>
     .allmap {
         display: inline-block;
-        width: 500px;
+        width: 501px;
         height: 400px;
     }
 </style>
